@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação de Letra R</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .animation-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .rotating-r {
+            font-size: 10rem;
+            font-weight: bold;
+            color: #8e44ad;
+            animation: rotate 5s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #e91e63; /* Rosa */
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: #c2185b;
+        }
+
+        .button:active {
+            transform: scale(0.95);
+        }
+
+        .button-return {
+            background-color: #8e44ad; /* Roxo */
+        }
+
+        .button-return:hover {
+            background-color: #7d3c8f;
+        }
+
+        .audio-player {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation-container">
+        <div class="rotating-r">R</div>
+        <div class="button-container">
+            <button class="button" onclick="playAudio()">Muito legal</button>
+            <button class="button button-return" onclick="window.location.href='entrada.html';">Voltar ao Início</button>
+        </div>
+        <audio id="background-music" class="audio-player" autoplay loop>
+            <source src="path/to/your-music-file.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento audio.
+        </audio>
+    </div>
+
+    <script>
+        function playAudio() {
+            document.getElementById('background-music').play();
+        }
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #9b59b6, #e91e63); /* Gradiente roxo e rosa */
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        .welcome-message {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #8e44ad; /* Roxo */
+            border: none;
+            border-radius: 50px; /* Botão bem redondo */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(142, 68, 173, 0.6); /* Efeito de brilho */
+        }
+
+        .button:hover {
+            background-color: #9b59b6; /* Roxo mais claro */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 25px rgba(142, 68, 173, 0.8); /* Brilho mais intenso */
+        }
+
+        .button:active {
+            background-color: #7d3c8f; /* Roxo mais escuro */
+            transform: scale(0.98);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 15px rgba(142, 68, 173, 0.6); /* Brilho reduzido */
+        }
+
+        .icons {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .icons a:hover {
+            color: #1abc9c; /* Cor ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="welcome-message">Bem-vindo ao meu site!</div>
+        <button class="button" onclick="window.location.href='inicial.html';">Entrar</button>
+    </div>
+
+    <div class="icons">
+        <a href="https://www.instagram.com/r7fael_sz/" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://wa.me/00000000000" target="_blank" class="fab fa-whatsapp"></a>
+    </div>
+
+</body>
+
+</html>
+
